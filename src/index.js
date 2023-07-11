@@ -1,33 +1,33 @@
-import "./style.css";
-import images from "./assets/more.png";
+import './style.css';
+import images from './assets/more.png';
 
 const moreIcon = images;
 
 const tasks = [
   {
-    description: "Task 1",
+    description: 'Task 1',
     completed: false,
     index: 1,
   },
   {
-    description: "Task 2",
+    description: 'Task 2',
     completed: false,
     index: 2,
   },
   {
-    description: "Task 3",
+    description: 'Task 3',
     completed: false,
     index: 3,
   },
 ];
 const renderTasks = () => {
-  const todoList = document.querySelector("#TODO-List");
+  const todoList = document.querySelector('#TODO-List');
 
   tasks.sort((a, b) => a.index - b.index);
 
   tasks.forEach((task) => {
-    const listItem = document.createElement("div");
-    listItem.className = "list-item";
+    const listItem = document.createElement('div');
+    listItem.className = 'list-item';
     listItem.innerHTML = ` 
     <input class="check-box" type="checkbox">
        <span> ${task.description} </span>
@@ -35,14 +35,14 @@ const renderTasks = () => {
     `;
 
     if (task.completed) {
-      listItem.classList.add("completed");
+      listItem.classList.add('completed');
     }
 
     todoList.appendChild(listItem);
 
-    const hr = document.createElement("hr");
+    const hr = document.createElement('hr');
     todoList.appendChild(hr);
   });
 };
 
-document.addEventListener("DOMContentLoaded", renderTasks);
+document.addEventListener('DOMContentLoaded', renderTasks);
