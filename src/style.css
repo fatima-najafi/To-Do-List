@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 100px;
+  width: 500px;
+  background-color: white;
+  border: 1px;
+  box-shadow: 2px 2px 7px black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.row h1 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.remove {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.input {
+  text-indent: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  width: 400px;
+}
+
+.TODO-List {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elements h2 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  margin-left: 15px;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #80808029;
+  margin-top: 0;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.clear a {
+  color: #000;
+  text-decoration: none;
+}
+
+.completed {
+  color: rgb(167, 166, 166);
+  text-decoration: line-through;
+}
+
+.list-item {
+  padding-bottom: 10px;
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.list-item span {
+  width: 100%;
+  margin-left: 20px;
+}
+
+span img {
+  width: 20px;
+  float: right;
+  margin-right: 5px;
+}
