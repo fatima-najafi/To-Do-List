@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-     <script src="https://kit.fontawesome.com/8c1870b6fa.js"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<body>
-   <div class="container">
-      <div class="row">
-        <h1>Today's To Do</h1>
-       
-        <i class="fa-solid fa-rotate" id="reload" class="icon" ></i>
-        
-      </div>
-      <hr />
-      <div class="row">
-        <form class="form" method="post">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <script
+      src="https://kit.fontawesome.com/8c1870b6fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <header hidden>
+      <nav class="nav">
+        <div>
+          <a href="#">Todo List</a>
+        </div>
+        <div>
+          <a id="listBtn" class="nav-border" href="#List">List</a>
+          <a id="AddNewBtn" class="nav-border" href="#Add-new">Add new</a>
+        </div>
+      </nav>
+    </header>
+    <!-- nav-bar end -->
+
+    <main>
+      <section id="todo-section">
+        <h2 class="bg">
+          Today's To Do
+          <button class="btn-no" type="button" id="add-btn">
+            <i class="fa-solid fa-rotate" id="reload" class="icon"></i>
+          </button>
+        </h2>
+        <form class="bg">
           <input
-            class="input"
             type="text"
-            name="title"
-            id="task"
+            id="description"
+            name="description"
+            required
             placeholder="Add to your list..."
           />
-          
-          <i class="fa-solid fa-plus" id="plus" class="icon" ></i>
+          <button class="btn-no" type="submit" id="add-btn">
+            <i class="fa-solid fa-plus" id="plus" class="icon"></i>
+          </button>
         </form>
-      </div>
-      <hr />
-      <div class="TODO-List" id="TODO-List">
-        
-      </div>
-      <div class="clear">
-        <a href="#"><p id="clear">Clear all completed</p></a>
-      </div>
-    </div>
-    <script  src="index.js"></script>
+        <div id="todo-list">
+          <div class="todo">
+            <div class="w-auto">
+              <input type="checkbox" />
+              <label>wash the dish</label>
+              <input type="text" />
+            </div>
+            <div class="w-auto">
+              <img src="" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <div class="text-center bg" id="clear">
+          <label>Clear all completed</label>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
 
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
