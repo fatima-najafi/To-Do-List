@@ -4,17 +4,18 @@
 
   <br/>
 
-  <h3><b>To Do list</b></h3>
+  <h3><b>TODO LIST</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+  - [📹 Walkthrough ](#Walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -30,9 +31,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# porfolio mobile version <a name="about-project"></a>
+# Todo list webapp <a name="about-project"></a>
 
-**to do list porject** is a project that we implement using html, css and javascript
+**todo list projec**is A todo list project that is a simple application that helps users keep track of tasks they need to complete.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,27 +47,22 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li>N/A</li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li>N/A</li>
-  </ul>
-</details>
-
 ### Key Features <a name="key-features"></a>
 
-- **Display colorfull text**
+- **Tasks can be added and removed**
+- **User can edit tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Comming soon
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📹 Walkthrough  <a name="Walkthrough"></a>
+
+- This project will be presented in the future.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,9 +104,7 @@ Double-click on the index file (index.html)
 
 ### Run tests
 
-To run tests, run the following command:
-
-N/A
+- Tests have not been created yet.
 
 ### Deployment
 
@@ -132,7 +126,8 @@ Deploy this project on any websever
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add a hello animated illustration**
+- [ ] **Deploy to a server**
+- [ ] **Add unit tests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,10 +148,6 @@ If you like this project give me a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to express my gratitude to [Microverse](https://www.microverse.org/) for their strong support.
-
-Special thanks to [Cindy Shin](https://www.behance.net/adagio07) for here exceptional design which served as inspiration for this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
