@@ -72,39 +72,55 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-- You need to have NodeJS installed
-- A Web Browser (Google Chrome, Firefox, etc)
-- A Code Editor (Notepad++, VSCode, etc)
+In order to run this project you need the following tools:
+- Node.js in your computer
+- IDE(e.g.: Vscode,...)
+- Terminal
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder by running the following commands in your terminal:
 
-```
-git clone yourlink repo https://github.com/fatima-najafi/To-Do-List
-
-cd your folder name
+```sh
+  cd your-prefered-folder-name
+  
+  git clone https://github.com/fatima-najafi/To-Do-List.git
 ```
 
 ### Install
 
-Install this project with:
+- Install this project with:
 
+```sh
+  cd To-Do-List
+
+  npm install or npm i
 ```
-npm install
+
+- Run an optimized build for prodction:
+```
+  npm run build
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-Double-click on the index file (index.html)
+```sh
+  npm start
+
+```
 
 ### Run tests
 
-- Tests have not been created yet.
+To run tests, run the following command:
+
+```sh
+  npm run test
+```
+.
+.
+.
 
 ### Deployment
 
