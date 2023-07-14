@@ -38,7 +38,7 @@ a {
 }
 
 main {
-  margin: 60px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
 }
@@ -52,7 +52,7 @@ main {
   background-color: #fcfafa;
   width: 30em;
   font-size: large;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 15px black;
 }
 
 #todo-section h2 {
