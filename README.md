@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [live demo link](https://fatima-najafi.github.io/To-Do-List/)
+- [live demo link](https://fatima-najafi.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
