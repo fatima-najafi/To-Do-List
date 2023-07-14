@@ -1,1 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Todo List</title><script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css"/><script defer="defer" src="index.bundle.js"></script></head><body><header hidden><nav class="nav"><div><a href="#">Todo List</a></div><div><a id="listBtn" class="nav-border" href="#List">List</a> <a id="AddNewBtn" class="nav-border" href="#Add-new">Add new</a></div></nav></header><main><section id="todo-section"><h2 class="bg">Today's To Do <button class="btn-no" type="button" id="add-btn"><i class="fa-solid fa-rotate" id="reload" class="icon"></i></button></h2><form class="bg"><input id="description" name="description" required placeholder="Add to your list..."/> <button class="btn-no" type="submit" id="add-btn"><i class="fa-solid fa-plus" id="plus" class="icon"></i></button></form><div id="todo-list"><div class="todo"><div class="w-auto"><input type="checkbox"/> <label>wash the dish</label> <input/></div><div class="w-auto"><img src="" alt="" srcset=""/></div></div></div><div class="text-center bg" id="clear"><label>Clear all completed</label></div></section><footer></footer></main><script src="./index.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer="defer" src="index.bundle.js"></script>
+  </head>
+  <body>
+    <header hidden>
+      <nav class="nav">
+        <div><a href="#">Todo List</a></div>
+        <div>
+          <a id="listBtn" class="nav-border" href="#List">List</a>
+          <a id="AddNewBtn" class="nav-border" href="#Add-new">Add new</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="todo-section">
+        <h2 class="bg">
+          Today's To Do
+          <button class="btn-no" type="button" id="add-btn">
+            <img id="reloadBtn" src="#" alt="reload" />
+          </button>
+        </h2>
+        <form class="bg">
+          <input
+            id="description"
+            name="description"
+            required
+            placeholder="Add to your list..."
+          />
+          <button class="btn-no" type="submit" id="add-btn">
+            <img id="enterBtn" src="#" alt="submit" />
+          </button>
+        </form>
+        <div id="todo-list">
+          <div class="todo">
+            <div class="w-auto">
+              <input type="checkbox" /> <label>wash the dish</label> <input />
+            </div>
+            <div class="w-auto"><img src="" alt="" srcset="" /></div>
+          </div>
+        </div>
+        <div class="text-center bg" id="clear">
+          <label>Clear all completed</label>
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

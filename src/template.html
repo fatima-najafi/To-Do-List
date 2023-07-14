@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-    <script
-      src="https://kit.fontawesome.com/8c1870b6fa.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -30,7 +26,7 @@
         <h2 class="bg">
           Today's To Do
           <button class="btn-no" type="button" id="add-btn">
-            <i class="fa-solid fa-rotate" id="reload" class="icon"></i>
+            <img id="reloadBtn" src="#" alt="reload" />
           </button>
         </h2>
         <form class="bg">
@@ -42,7 +38,7 @@
             placeholder="Add to your list..."
           />
           <button class="btn-no" type="submit" id="add-btn">
-            <i class="fa-solid fa-plus" id="plus" class="icon"></i>
+            <img id="enterBtn" src="#" alt="submit" />
           </button>
         </form>
         <div id="todo-list">
@@ -58,12 +54,12 @@
           </div>
         </div>
         <div class="text-center bg" id="clear">
-          <label>Clear all completed</label>
+          <label>Clear all completed task</label>
         </div>
       </section>
       <footer></footer>
     </main>
 
-    <script src="./index.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
