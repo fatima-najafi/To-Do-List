@@ -1,13 +1,12 @@
 import getdata from '../module/getData.js';
 
-function testCheckBoxValue(event) {
-  const data = getdata();
-  data.forEach((task) => {
-    if (task.completed !== event) {
-      task.completed = event;
+const testCheckBoxValue = (description, newStatus) => {
+  const todos = getdata();
+  todos.forEach((todo) => {
+    if (todo.description === description) {
+      todo.completed = newStatus;
     }
   });
-  localStorage.setItem('tasks', JSON.stringify(data));
-}
-
+  localStorage.setItem('tasks', JSON.stringify(todos));
+};
 export default testCheckBoxValue;
