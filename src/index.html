@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
-      integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <title>Document</title>
-    <script
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
       src="https://kit.fontawesome.com/8c1870b6fa.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
     <div class="container">
-      <div class="row">
-        <h1>Today's To Do</h1>
-        <i id="reload" class="fa-solid fa-arrows-rotate icon"></i>
-      </div>
-      <hr />
-      <div class="row">
-        <form class="form" method="post">
-          <input
-            class="input"
-            type="text"
-            name="title"
-            id="task"
-            placeholder="Add to your list..."
-          />
-          <i id="plus" class="fa-solid fa-plus icon"></i>
-        </form>
-      </div>
-      <hr />
-      <div class="TODO-List" id="TODO-List">
-        <div draggable="true"></div>
-      </div>
-      <div class="clear">
-        <a href="#"><p id="clear">Clear all completed</p></a>
-      </div>
+        <div class="row">
+            <h1>Today's  To Do</h1>
+              <i id="reload" class="fa-solid fa-arrows-rotate icon"></i>
+        </div>
+        <hr>
+        <div class="row">
+            <form class="form" method="post">
+                <input class="input" type="text" name="title" id="task" placeholder = "Add to your list...">
+                 <i id="plus" class="fa-solid fa-plus icon"></i>
+            </form>
+        </div>
+        <hr>
+        <div class="TODO-List" id="TODO-List">
+            <div draggable="true"></div>
+        </div>
+        <div class="clear">
+            <a href="#"><p id="clear">Clear all completed</p></a>
+        </div>
     </div>
-  </body>
+</body>
 </html>
+
+
+
