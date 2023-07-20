@@ -10,12 +10,12 @@ import testCheckBoxValue from "./testCheckData.js";
 
 describe("Test methods", () => {
   test("should add data to the list", () => {
-    addData("do exercise");
+    addData("what happened?");
     const data = getdata();
     expect(data.length).toBe(1);
   });
   test("should edit the data from the list", () => {
-    testCurrentValue("do exercise");
+    testCurrentValue("what happened?");
     testEditValue("reading js");
     const data = getdata();
     expect(data[0].description).toBe("reading js");
