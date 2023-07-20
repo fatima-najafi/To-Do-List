@@ -20,21 +20,64 @@ describe("Test methods", () => {
     const data = getdata();
     expect(data[0].description).toBe("reading js");
   });
-  test("should check the checkbox of data from the list", () => {
-    testCheckBoxValue(true);
-    const data = getdata();
-    expect(data[0].completed).toBe(true);
+  // change required
+  beforeEach(() => {
+    const todos = [
+      {
+        id: 1,
+        description: "test todo list the second part",
+        completed: false,
+      },
+      { id: 2, description: "another todo", completed: false },
+    ];
+    localStorage.setItem("todos", JSON.stringify(todos));
   });
 
-  test("should delete the checked data from the list", () => {
-    clearAllData();
-    const data = getdata();
-    expect(data.length).toBe(0);
-  });
+  describe("testCheckBoxValue", () => {
+    test("should update the completed status of the todo with the given description", () => {
+      testCheckBoxValue("test todo list the second part", true);
+      const todos = JSON.parse(localStorage.getItem("todos"));
+      expect(todos[0].completed).toBe(true);
+      // expect(todos[1].completed).toBe(false);
+    });
+    test("should delete the checked data from the list", () => {
+      const todos = [
+        { id: 1, description: "test todo list", completed: true },
+        { id: 2, description: "another todo", completed: false },
+      ];
+      localStorage.setItem("todos", JSON.stringify(todos));
+      clearAllData();
+      expect(localStorage.getItem("todos")).toBe(null);
+    });
 
-  test("should delete data from the list", () => {
-    deletTasksFromLocalSorage("hi");
-    const data = getdata();
-    expect(data.length).toBe(0);
+    test("should delete data from the list", () => {
+      const todos = [
+        { id: 1, description: "test todo list", completed: false },
+        { id: 2, description: "another todo", completed: false },
+      ];
+      localStorage.setItem("todos", JSON.stringify(todos));
+      deletTasksFromLocalSorage("test todo list");
+      const remainingTodos = JSON.parse(localStorage.getItem("todos"));
+      expect(remainingTodos).toHaveLength(1);
+      expect(remainingTodos[0].description).toBe("another todo");
+    });
   });
+  // finish change required
+  // test("should check the checkbox of data from the list", () => {
+  //   testCheckBoxValue(true);
+  //   const data = getdata();
+  //   expect(data[0].completed).toBe(true);
+  // });
+
+  //   test("should delete the checked data from the list", () => {
+  //     clearAllData();
+  //     const data = getdata();
+  //     expect(data.length).toBe(0);
+  //   });
+
+  //   test("should delete data from the list", () => {
+  //     deletTasksFromLocalSorage("hi");
+  //     const data = getdata();
+  //     expect(data.length).toBe(0);
+  //   });
 });

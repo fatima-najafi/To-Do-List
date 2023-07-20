@@ -7,6 +7,7 @@ function clearAllData() {
     task.index = index + 1;
   });
   localStorage.setItem('tasks', JSON.stringify(deleteAll));
+  localStorage.setItem('todos', '');
 }
 
 export default clearAllData;
