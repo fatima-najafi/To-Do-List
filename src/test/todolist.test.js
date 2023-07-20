@@ -8,7 +8,7 @@ import testCheckBoxValue from "./testCheckData.js";
 
 describe("Test methods", () => {
   test("should add data to the list", () => {
-    addData("the");
+    addData("read-book");
     const data = getdata();
     expect(data.length).toBe(1);
   });
