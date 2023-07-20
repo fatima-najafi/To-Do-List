@@ -139,6 +139,13 @@ Deploy this project on any websever
 - Twitter: [@twitterhandle](https://twitter.com)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/fatima-najafi-75424a23a/)
 
+👤 **Mehmet Selçuk Güler **
+
+- GitHub: [@githubhandle](https://github.com/s2jack)
+- Twitter: [@twitterhandle](https://twitter.com/1stGuler)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/selcuk-guler/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
