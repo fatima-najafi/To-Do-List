@@ -4,7 +4,7 @@
   "description": "this is a webpack project that the purpose of this project is to understand how use webpack to bundle JavaScript,\r learn how to use proper ES6 syntax,use ES6 modules to write modular JavaScript and build a simple HTML list of To Do tasks.\r # Built With\r - Major languages\r - Frameworks\r - Technologies used",
   "private": true,
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },

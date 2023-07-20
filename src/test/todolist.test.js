@@ -2,7 +2,6 @@
 import addData from "../module/addData.js";
 import clearAllData from "../module/clearAllData.js";
 import deletTasksFromLocalSorage from "../module/deleteData.js";
-
 import getdata from "../module/getData.js";
 import testCheckBoxValue from "./testCheckData.js";
 
